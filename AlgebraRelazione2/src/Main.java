@@ -11,14 +11,14 @@ public class Main {
         Relation prodotti = loader3.loadCSVinRelation();
 
         System.out.println("prodotto cartesiano:");
-        System.out.println(persone.prodotto(prodotti));
+        System.out.println(persone.prodotto(prodotti).toString());
 
 
         System.out.println("joni:");
         String[] join1 = {"id_prodotto", "id_prodotto"};
         Relation joinOrdiniProdotti = ordini.join(prodotti, join1);
 
-        System.out.println(joinOrdiniProdotti);
+        System.out.println(joinOrdiniProdotti.toString());
 
 
         System.out.println("\n query num. 1:");

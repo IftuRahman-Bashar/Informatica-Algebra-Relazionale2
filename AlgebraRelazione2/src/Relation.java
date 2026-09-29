@@ -185,9 +185,18 @@ public class Relation {
 
     @Override
     public String toString() {
-        return "Relation{" +
-                "header=" + header +
-                ", rows=" + rows +
-                '}';
+        String out = "";
+
+        for (int i = 0; i < header.size(); i++) {
+            out += header.get(i) + " ";
+        }
+        out += "\n";
+
+        for (int i = 0; i < rows.size(); i++) {
+            out += rows.get(i) + " \n";
+        }
+
+        return out;
     }
+
 }
